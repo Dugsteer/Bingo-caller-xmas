@@ -28,37 +28,41 @@ myFunction(blue);
 
 //GENERAL SCRIPT
 const bingoArray = [
-  "archery.svg",
-  "badminton.svg",
-  "basketball.svg",
-  "boxing.svg",
-  "climbing.svg",
-  "cycling.svg",
-  "diving.svg",
-  "driving.svg",
-  "football.svg",
-  "golf.svg",
-  "gymnastics.svg",
-  "hang-gliding.svg",
-  "hiking.svg",
-  "hockey.svg",
-  "horse-riding.svg",
-  "ice-skating.svg",
-  "karate.svg",
-  "kayak.svg",
-  "paddle-surf.svg",
-  "rugby.svg",
-  "running.svg",
-  "sailing.svg",
+  "angel.svg",
+  "bell.svg",
+  "cake.svg",
+  "camel.svg",
+  "candle.svg",
+  "candy.svg",
+  "card.svg",
+  "choir.svg",
+  "decoration.svg",
+  "elf.svg",
+  "food.svg",
+  "gingerbread.svg",
+  "hat.svg",
+  "holly.svg",
+  "jumper.svg",
+  "kings.svg",
+  "lights.svg",
+  "mitten.svg",
+  "present.svg",
+  "reindeer.svg",
+  "sack.svg",
+  "santa.svg",
+  "skating.svg",
   "skiing.svg",
-  "surfing.svg",
-  "swimming.svg",
-  "table-tennis.svg",
-  "tennis.svg",
-  "trophy.svg",
-  "weight-lifting.svg",
-  "windsurfing.svg",
-  "yoga.svg" 
+  "sleigh.svg",
+  "snow-globe.svg",
+  "snowball.svg",
+  "snowflake.svg",
+  "snowman.svg",
+  "star.svg",
+  "stocking.svg",
+  "tag.svg",
+  "toys.svg",
+  "wreath.svg",
+  "xmas-day.svg"
 ];
 
   const gameboard = document.getElementById("gameboard");
@@ -137,7 +141,7 @@ const bingoArray = [
       div.innerHTML = `
     <div class="minicard text-center">
     <img src="./img/${item}">
-    <h3 class="minicard__h3">${item.slice(0, -4)}</h3>
+    <h3 class="minicard__h3">${item.slice(0, -4).toString().replace(/-/g, ' ')}</h3>
   </div>
   `;
       gameboard.appendChild(div);
@@ -165,7 +169,7 @@ const bingoArray = [
       var div = document.createElement("div");
       div.innerHTML = `
     <div class="minicard text-center d-flex justify-content-center">
-    <h3 class="minicard__h3">${item.slice(0, -4)}</h3>
+    <h3 class="minicard__h3">${item.slice(0, -4).toString().replace(/-/g, ' ')}</h3>
   </div>
   `;
       gameboard.appendChild(div);
